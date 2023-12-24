@@ -1,0 +1,21 @@
+/* css reset */
+
+/* import external material fonts - icons */
+
+
+/* general styles */
+
+/* generic project styles */
+
+
+/* Header */
+
+
+/* Main content */
+
+
+/* Footer*/
+
+
+
+/* */
