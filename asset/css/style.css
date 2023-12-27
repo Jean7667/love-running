@@ -88,17 +88,26 @@ main {
     margin-top: 47px;
 }
 
+/*responsive image hero*/
+
+#hero{
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
-    list-style: none;
+    list-style-type: none;
     
 #social-networks i {
-    font-size: 160%;
-    padding: 5%;
+    font-size:160%;
+    padding:5%;
     color: #3a3a3a;
 }
 
@@ -133,7 +142,7 @@ main {
     
 }
 /* responsive large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width:992 px ) {
+@media screen and (min-width:992px ) {
     #menu a:hover {
         border: bottom 1px, solid, #3a3a3a;
     }
