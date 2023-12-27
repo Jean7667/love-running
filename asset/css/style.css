@@ -9,12 +9,12 @@
     /*how the total width and height of an element is calculated */
     box-sizing: border-box;
 }
-
+/* Generic project styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic project styles */
+    
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
@@ -25,7 +25,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
+    box-shadow: 0 1px 1px #3a3a3a;
 }
 header a {
     text-decoration: none;
