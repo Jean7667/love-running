@@ -64,7 +64,7 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 3px 3px #3a3a3a;
     display: none;
-    /* top: 100%; */
+    top: 100%
 }
 /* Nav toggle */
 
@@ -89,6 +89,52 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+}
+/* responsive ipad screen */
+@media screen and (min-width:768px) {
+    nav{
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right:1 rem;
+    #menu {
+        display: flex;
+            }
+    #menu > li {
+        padding-left: 1rem;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+        }
+    main {
+ /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+        }
+    }
+    
+}
+/* responsive large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width:992 px ) {
+    #menu a:hover {
+        border: bottom 1px, solid, #3a3a3a;
+    }
 }
