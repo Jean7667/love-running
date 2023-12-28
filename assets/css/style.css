@@ -270,14 +270,17 @@ border: 2px solid white;
         box-shadow: none;
         width: fit-content;
         padding-right:1 rem;
+    }
     #menu {
         display: flex;
             }
     #menu > li {
         padding-left: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
+    
     }
     #logo {
         font-size: 280%;
