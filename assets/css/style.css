@@ -63,6 +63,7 @@ of headings to rank our site higher.*/
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+/* naviigation bar styles with dropdown toggle menu */
 nav {
     background-color: #ffffff;
     position: absolute;
@@ -117,6 +118,7 @@ main {
 
 #cover-text > h2, #cover-text > h3 {
     color: #ffffff;
+    
 }
 
 #circle-cover-bg {
@@ -163,6 +165,59 @@ border: 2px solid white;
 }
 
 
+/* Form */
+#signup {
+    background-image: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.8);
+    padding: 30px;
+}
+
+
+#signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
+
+
+
 /* Footer */
 
 #social-networks {
@@ -195,20 +250,17 @@ border: 2px solid white;
 }
 
 
-
-
-
 /*--------------------------------------------------MEDIA QUERY -----------------------------------------*/
 
-/*-----responsive media query Gallery page big screen and landscape -------*/
+            /*-----responsive media query Gallery page big screen and landscape -------*/
 
 @media screen and (min-width: 576px) {
+    
     #photos {
         column-count: 2;
         column-gap: 0;
     }
 }
-
 
 /* responsive ipad screen */
 @media screen and (min-width:768px) {
@@ -242,7 +294,8 @@ border: 2px solid white;
     #cover-text {
                width: 300px;
                right: 50px;
-           }
+               
+            }
     /* Reasons section */
 #reasons {
     width: 90%;
@@ -280,7 +333,7 @@ border: 2px solid white;
 
 @media screen and (min-width:992px ) {
     #menu a:hover {
-        border: bottom 1px, solid, #3a3a3a;
+        border-bottom: 1px solid #3a3a3a;
     }
  
 /*-----Gallery page -------*/
