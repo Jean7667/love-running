@@ -43,6 +43,13 @@ h1, h2, h3 {
     color: #252525;
 }
 
+/* use hidden class ----- reason for this is that search engines such as Google use these types
+of headings to rank our site higher.*/
+
+.hidden-heading {
+    display:none;
+}
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -82,7 +89,7 @@ nav {
 }
 /* Main content */
 main {
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
@@ -129,6 +136,33 @@ main {
     justify-content: center;
 }
 
+/*metup times section */
+
+#times {
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+
+    /* This will not wrap on screens of less than 400px wide
+Each div will expand to fill the available space on its row */
+    
+flex-basis: 200px;
+    flex-grow: 1;
+
+/* Creates a grid of meetup time divs over the background image */
+
+border: 2px solid white;
+}
+
+
 /* Footer */
 
 #social-networks {
@@ -137,6 +171,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+}
     
 #social-networks i {
     font-size:160%;
@@ -144,7 +179,27 @@ main {
     color: #3a3a3a;
 }
 
+#times h3 {
+    /* Override the heading colour set in general styles */
+    color: #fafafa;
 }
+
+/*--------------------------------------------------GALLERY ---------------------------------------------*/
+
+/* Gallery page */
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
+}
+
+
+/*--------------------------------------------------MEDIA QUERY -----------------------------------------*/
+
+
 /* responsive ipad screen */
 @media screen and (min-width:768px) {
     nav{
@@ -205,9 +260,44 @@ main {
     margin: 5px 0;
 }
 }
+
+
+
+
+
 /* responsive large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width:992px ) {
     #menu a:hover {
         border: bottom 1px, solid, #3a3a3a;
+    }
+}
+
+/* responsive large devices (laptops and desktops, 992px and up) */
+
+@media screen and (min-width: 1200px) {    
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits > div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
     }
 }
