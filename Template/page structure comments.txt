@@ -149,4 +149,4 @@ main {
     
 }
 
-/* */
+/* bien commenter les section media query et verifier faire attention que chaque style soit bien entre les braquets*/
